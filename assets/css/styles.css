@@ -74,14 +74,11 @@ header{
     height: 4%;
     margin-left: 80px;
 }
-
 /*************************************************Acceuil Header**************************************************/
-
 #acceuil .header-content {
     position: absolute;
     top: 30%;
     left: 5%;
-    /* transform: translate(-50%, -50%); */
     margin: auto;
 }
 
@@ -90,20 +87,15 @@ header{
     margin-bottom: 20px;
     width: 75%;
     color: var(--white);
-    margin-left: 60px ;
-    
+    margin-left: 60px ;   
 }
-
-
 #acceuil .header-content p {
     font-size: 1.1em;
     margin-left: 60px;
     color: var(--whiteBG);
     margin-bottom: 6%;
-    margin-top: 3%;
-    
+    margin-top: 3%;   
 }
-
 #acceuil .header-content .btn-primary {
     background-color: var(--Viridian);
     color: var(--white);
@@ -113,31 +105,23 @@ header{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 #acceuil .header-content .btn-primary:hover {
     background-color: var(--Asparagus);
 }
 
-
-
 /************************************************Services ********************************************/
-
-
 #services {
     padding: 60px 0;
     text-align: center;
     margin: auto;
     background-color: var(--whiteBG);
-    
 }
-
 .service-container h2 {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 5px;
     /* color: var(--Blue-Zodiac); */
 }
-
 .contenu-service {
     display: flex;
     justify-content: center;
@@ -145,7 +129,6 @@ header{
     gap: 45px;
     margin-top: 5%;
 }
-
 .service-btp {
     background-color: var(--white);
     border-radius: 10px;
@@ -154,40 +137,29 @@ header{
     width: 300px;
     height: 350px;
 }
-
 .service-btp img {
     width: 50%;
     border-radius: 10px;
     margin-bottom: 20px;
     
 }
-
-
 .service-btp h3 {
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 25px;
     text-align: center;
 }
-
 .service-btp p {
     font-size: 0.9em;
     color: var(--muted);
     text-align: left;
 }
 
-
 .service-container span{
     color: var(--Blue-Zodiac);
 }
 
-
-
-
 /*******************************************A propos *********************************/
-
-
-
 #propos {
     text-align: center;
     padding: 50px 20px;
@@ -199,7 +171,6 @@ header{
     margin-bottom: 5px;
     color: var(--Blue-Zodiac);
 }
-
 .propos-contenu {
     display: flex;
     /* flex-wrap: wrap; */
@@ -208,7 +179,6 @@ header{
     align-items: center;
     gap: 10px;
 }
-
 
 .text-contenu {
     background: var(--whiteBG);
@@ -219,15 +189,11 @@ header{
     
     
 }
-
- 
 .image-container img {
     width: 54%;
     height: auto;
     margin-top: 75px;
     /* display: block; */
-
-
 }
 
 .text-contenu {
@@ -250,8 +216,6 @@ header{
     color: var(--muted);
     text-align: left;
 }
- 
-
 
 /******************************************Temoignages************************************/
 
@@ -261,8 +225,6 @@ header{
     margin: auto;
     text-align: center;
     background-color: var(--whiteBG);
-
-
 }
 
 #temoignages h2 {
@@ -270,14 +232,12 @@ header{
     margin-bottom: 5px;
     color: var(--Blue-Zodiac);
 }
-
 .testimonial-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     /* flex-wrap: wrap; */
-    
 }
 
 .testimonial {
@@ -302,14 +262,11 @@ header{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .testimonial p {
     font-size: 1em;
     color: var(--muted);
     margin: 5px 25px 25px 25px;
 }
-
-
 .profile{
     display: flex;
     align-items: center;
@@ -319,7 +276,6 @@ header{
     margin: 5px 15px 25px 15px;
     width: 100%;
 }
-
 .profile .etoile{
     position: relative;
     top: 7px;
@@ -328,10 +284,7 @@ header{
 
 }
 
-
-
 /*********************************************Contacter ******************************************************/
-
 
 #contact .container-cntct {
     /* max-width: 1050px; */
@@ -346,7 +299,6 @@ header{
 
 
 }
-
 .contact-form {
      max-width: 1050px;
      margin: 0 auto;
@@ -355,22 +307,6 @@ header{
     justify-content: space-between;
     align-items: flex-start;
 }
-
-/* 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 20px;
-}
-
-label {
-    
-    margin-bottom: 5px;
-    color:var(--dark);
-} */
-
-
 form {
     flex: 1;
     margin-right: 20px;
@@ -382,23 +318,17 @@ label {
     color: var(--dark);
 }
 
-input, textarea {
-    
+input, textarea { 
     width: 80%;
     padding: 10px;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
     border: 1px solid var(--cl-input);
     border-radius: 8px;
-   
 }
-
-
 textarea {
     height: 100px;
     resize: none;
 }
-
 button {
     display: block;
     width: 80%;
@@ -410,26 +340,20 @@ button {
     margin-top: 10px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: var(--Como-Green);
 }
-
 .contact-info {
     flex: 1;
 }
 .contact-info p {
     font-weight: 550;
     margin-bottom: 8px;
-    margin-top: 15px;
-  
+    margin-top: 15px; 
 }
-
 .contact-info span{
     font-weight: 500;
 }
-
-
 .contact-info a {
     color: var(--primary);
     text-decoration: none;
@@ -444,8 +368,6 @@ iframe {
     height: 270px;
    
 }
-
-
 footer {
 
     padding: 0px 20px 0px 20px;
@@ -461,15 +383,12 @@ footer p {
    position: relative;
    top: 20px;
 }
-
-
 .social-media {
     
     text-align: right;
     display: flex;
     justify-content: end;
-    align-items: center;
-    
+    align-items: center;   
 }
 .social-media a {
     margin: 0 10px;
@@ -493,14 +412,6 @@ hr{
     width: 100%;
     margin-bottom: 30px;
 }
-
-
-
-
-
-
-
-
 /****************************Menu bar***************************************/
 .navbar .menu-toggle{
     display: none;
@@ -511,13 +422,11 @@ hr{
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
-
 /*************************Media query******************************************/
 
 @media only screen and (min-width: 765px) and (max-width: 1150px) {
 
-    /************* Services *****************************/
-        
+    /************* Services *****************************/   
     #services {
         padding: 60px 0;
         text-align: center;
@@ -525,8 +434,6 @@ hr{
         background-color: var(--whiteBG);
         
     }
-
-
     .contenu-service {
         display: flex;
         justify-content: center;
@@ -535,11 +442,7 @@ hr{
         gap: 45px;
         margin-top: 5%;
     }
-
     /*********************Propos***********************************/
-
-        
-
     #propos {
         text-align: center;
         padding: 50px 20px;
@@ -554,19 +457,13 @@ hr{
         flex-direction: column;
         gap: 20px;
     }
-
-
     .text-contenu {
         background: var(--whiteBG);
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         overflow: hidden;
-        margin-right:0% ;
-        
-        
+        margin-right:0% ;   
     }
-
-    
     .image-container img {
         width: 70%;
         height: auto;
@@ -575,13 +472,11 @@ hr{
 
 
     }
-
     .text-contenu {
         margin-top: 60px;
         padding: 25px;
         max-width: 500px;
     }
-
     .text-contenu h2 {
         font-size: 1.5em;
         margin-bottom: 15px;
@@ -589,23 +484,16 @@ hr{
         margin-bottom: 40px;
         text-align: left;
     }
-
     .text-contenu p {
         font-size: 1em;
         line-height: 1.6;
         color: var(--muted);
         text-align: left;
     }
-    
-
-    
 /******************************************Temoignages************************************/
-
-
     hr{
         margin-bottom: 80px;
     }
-
     .testimonial-container {
         display: flex;
         justify-content: center;
@@ -616,16 +504,9 @@ hr{
         
     }
 
-
 }
-
-
 /*****************************************************************************/
-
-
 @media only screen and (min-width: 400px) and (max-width: 764px) {
-
-    
 
 /****************************Menu bar***************************************/
 .navbar .menu-toggle{
@@ -637,16 +518,12 @@ hr{
     height: 30px;
   
 }   
-
-
     .navbar{
         padding: 0px;
     }
-
     .navbar .menu-toggle{
         display: block;
     }
-
     .nav-links{
         position: absolute;  
         top: 35px;
@@ -658,7 +535,6 @@ hr{
         margin-left: -110%;
         transition: all 0.5s ease;
     }
-
     .nav-links.mobile-menu {
         margin-left: 0%;
     
@@ -669,29 +545,19 @@ hr{
         flex-direction: column;
         align-items: center;
     }
-
     .navbar .nav-links li{
         margin: 15px 5px 0px 0px;
         position: relative;
         left: 30px;
         font-size: 20px;
     }
-
-
-    
 .img-logo{
     width: 8%;
     height: 8%;
     margin-left: 80px;
 }
-
-
     
 /*****************Acceuil Header*************************/
-
-
-
-
     #acceuil .header-content h1 {
         font-size: 2.2em;
         margin-bottom: 20px;
@@ -700,9 +566,6 @@ hr{
         margin-left: 15px ;
         
     }
-
-
-
     #acceuil .header-content p {
         font-size: 0.9em;
         margin-left: 15px;
@@ -711,7 +574,6 @@ hr{
         margin-top: 3%;
         
     }
-
     #acceuil .header-content .btn-primary {
         background-color: var(--Viridian);
         color: var(--white);
@@ -721,8 +583,6 @@ hr{
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-
-
     /************* Services *****************************/
             
     #services {
@@ -732,8 +592,6 @@ hr{
         background-color: var(--whiteBG);
         
     }
-
-
     .contenu-service {
         display: flex;
         justify-content: center;
@@ -744,8 +602,6 @@ hr{
     }
 
     /*********************Propos***********************************/
-
-        
 
     #propos {
         text-align: center;
@@ -762,7 +618,6 @@ hr{
         gap: 20px;
     }
 
-
     .text-contenu {
         background: var(--whiteBG);
         border-radius: 10px;
@@ -772,23 +627,17 @@ hr{
         width: 80%;
         
     }
-
-
     .image-container img {
         width: 80%;
         height: auto;
         margin-top: 80px;
         /* display: block; */
-
-
     }
-
     .text-contenu {
         margin-top: 60px;
         padding: 25px;
         max-width: 500px;
     }
-
     .text-contenu h2 {
         font-size: 1.4em;
         margin-bottom: 15px;
@@ -796,20 +645,13 @@ hr{
         margin-bottom: 40px;
         text-align: left;
     }
-
     .text-contenu p {
         font-size: 1em;
         line-height: 1.6;
         color: var(--muted);
         text-align: left;
     }
-
-
-    
-    
 /***********************Temoignages********************************/
-
-
     hr{
         margin-bottom: 80px;
         width: 100%;
@@ -821,13 +663,9 @@ hr{
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        /* flex-wrap: wrap; */
-        
+        /* flex-wrap: wrap; */    
     }
-
     /*******************Contact ******************************/
-
-    
     .contact-form {
         max-width: 1050px;
         margin: 0 auto;
@@ -838,9 +676,7 @@ hr{
         flex-direction: column-reverse;
         gap: 100px;
         
-    }
-
-        
+    }  
     form {
         flex: 1;
         margin-right: 20px;
@@ -851,7 +687,6 @@ hr{
         margin-bottom: 5px;
         color: var(--dark);
     }
-
     input, textarea {
         
         width: 100%;
@@ -862,13 +697,10 @@ hr{
         border-radius: 8px;
         margin-right: 130px;
     }
-
-
     textarea {
         height: 100px;
         resize: none;
     }
-
     button {
         display: block;
         width: 100%;
@@ -879,10 +711,7 @@ hr{
         border-radius: 5px;
         margin-top: 10px;
         cursor: pointer;
-    }
-
-
-        
+    }    
     footer {
 
         padding: 0px 20px 0px 20px;
@@ -898,8 +727,6 @@ hr{
     position: relative;
     top: 20px;
     }
-
-
     .social-media {
         
         text-align: right;
@@ -908,7 +735,6 @@ hr{
         align-items: center;
         
     }
-
     .social-media img {
         width: 28px;
         height: 28px;
@@ -918,109 +744,4 @@ hr{
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
     
     } 
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-
-
-
-
-@media screen and (max-width: 680px) {
-    .img-logo{
-        position: absolute;
-        top: 70px;
-        left: 20px;
-    }
-
-    .navbar{
-        padding: 0px;
-    }
-
-    .navbar .menu-toggle{
-        display: block;
-    }
-
-    .nav-links{
-        position: absolute;  
-        top: 40px;
-       left: 50%;
-        background-color: var(--Blue-Zodiac);
-        background-color: var(--Gossamer);
-        backdrop-filter: blur(10px);
-        width: 40%;
-        height: 60vh;
-        margin-left: -100%;
-        transition: all 0.5s ease;
-    }
-
-    .nav-links.mobile-menu {
-        margin-left: 0%;
-    }
-
-    .nav-links ul{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar .nav-links li{
-        margin: 10px 0px;
-        position: relative;
-        left: 30px;
-    }
-} */

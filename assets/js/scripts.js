@@ -4,34 +4,33 @@ var navLinks = document.querySelector('.nav-links');
 toggleMenu.addEventListener('click', () => {
     navLinks.classList.toggle('mobile-menu');
 });
- /***********************Validation des champs  *****************/
- function validateForm() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-    
-    if (name === "") {
-        alert("Le nom est requis.");
-        return false;
-    }
-    
-    if (email === "") {
-        alert("L'email est requis.");
-        return false;
-    } else if (!validateEmail(email)) {
-        alert("L'email doit commencer par une lettre majuscule et se terminer par .co.");
-        return false;
-    }
-    
-    if (message === "") {
-        alert("Le message est requis.");
-        return false;
-    }
-    
-    return true;
-}
 
-function validateEmail(email) {
-    const re = /^[A-Z][^\s@]*@[^\s@]+\.[^\s@]+\.co$/;
-    return re.test(email);
-}
+/*************Validation du formulaire  *******************/
+
+
+  function validateForm() {
+  
+    const nameInput = document.getElementById("name");
+    const nameRegex = /^[a-zA-Z]+$/;  
+    const nameErrorMessage = document.getElementById("name-error-message");
+    
+    const emailInput = document.getElementById("email");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.btp$/;
+    const emailValidationMessage = document.getElementById("email-validation-message");
+
+    emailValidationMessage.textContent = "";
+     nameErrorMessage.textContent = "";
+   
+    if (!nameRegex.test(nameInput.value)) {
+      nameErrorMessage.textContent =alert( "Le nom doit contenir uniquement des lettres.");
+      return false;
+    }
+    if (!emailRegex.test(emailInput.value)) {
+      emailValidationMessage.textContent = alert("L'adresse email doit se terminer par .btp ");
+      return false;
+    } else {
+      emailValidationMessage.textContent = "Email valide!";
+      emailValidationMessage.classList.add("valid-message"); 
+    }
+    return true;
+  }

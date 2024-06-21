@@ -19,24 +19,18 @@
     --Manatee: #8c9ca4;
     --Slate-Gray: #8c9ca4;
     --cl-input :#52525B;
-
 }
-
 *{
     box-sizing: border-box;
     border: none;
     text-decoration: none;
     list-style: none;
     margin: 0;
-    padding: 0;
-}
-
+    padding: 0;}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--whiteBG);
-    overflow-x: hidden;
-}
-
+    overflow-x: hidden;}
 header{
     width: 100%;
     height: 80vh;
@@ -44,9 +38,7 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
+    background-attachment: fixed;}
 .navbar{
     position: absolute;
     display: flex;
@@ -54,49 +46,40 @@ header{
     align-items: center;
     width: 100%;
     background-color: var(--Viridian);
-    top: 1px;
-}
-
+    top: 1px;}
 .navbar .nav-links ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    margin-right: 80px;
-}
-
+    gap: 40px;}
+.navbar .nav-links ul li{
+    margin-right: 80px;}
 .navbar a{
-    color: white;
-}
+    color: white;}
 
 .img-logo{
     width: 4%;
     height: 4%;
-    margin-left: 80px;
-}
-
+    margin-left: 80px;}
 /*************************************************Acceuil Header**************************************************/
 #acceuil .header-content {
     position: absolute;
     top: 30%;
     left: 5%;
-    margin: auto;
-}
+    margin: auto;}
 
 #acceuil .header-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
     width: 75%;
     color: var(--white);
-    margin-left: 60px ;   
-}
-#acceuil .header-content p {
+    margin-left: 60px ;}
+#acceuil .header-content p{
     font-size: 1.1em;
     margin-left: 60px;
     color: var(--whiteBG);
     margin-bottom: 6%;
-    margin-top: 3%;   
-}
+    margin-top: 3%;  }
 #acceuil .header-content .btn-primary {
     background-color: var(--Viridian);
     color: var(--white);
@@ -104,144 +87,104 @@ header{
     border-radius: 5px;
     margin-left: 60px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
+    transition: background-color 0.3s ease;}
 #acceuil .header-content .btn-primary:hover {
-    background-color: var(--Asparagus);
-}
-
+    background-color: var(--Asparagus);}
 /************************************************Services ********************************************/
 #services {
     padding: 60px 0;
     text-align: center;
     margin: auto;
-    background-color: var(--whiteBG);
-}
+    background-color: var(--whiteBG);}
 .service-container h2 {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 5px;
-    /* color: var(--Blue-Zodiac); */
-}
+    margin-bottom: 5px;}
 .contenu-service {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 45px;
-    margin-top: 5%;
-}
+    margin-top: 5%;}
 .service-btp {
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
-    height: 350px;
-}
+    height: 350px;}
 .service-btp img {
     width: 50%;
     border-radius: 10px;
-    margin-bottom: 20px;
-    
-}
+    margin-bottom: 20px;}
 .service-btp h3 {
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 25px;
-    text-align: center;
-}
+    text-align: center;}
 .service-btp p {
     font-size: 0.9em;
     color: var(--muted);
     text-align: left;
 }
-
 .service-container span{
-    color: var(--Blue-Zodiac);
-}
-
+    color: var(--Blue-Zodiac);}
 /*******************************************A propos *********************************/
 #propos {
     text-align: center;
     padding: 50px 20px;
-    margin: auto;
-}
-
+    margin: auto;}
 #propos h1 {
     font-size: 2.5em;
     margin-bottom: 5px;
-    color: var(--Blue-Zodiac);
-}
+    color: var(--Blue-Zodiac);}
 .propos-contenu {
     display: flex;
-    /* flex-wrap: wrap; */
-
     justify-content: center;
     align-items: center;
-    gap: 10px;
-}
-
+    gap: 10px;}
 .text-contenu {
     background: var(--whiteBG);
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     overflow: hidden;
-    margin-right:8% ;
-    
-    
-}
+    margin-right:8% ;}
 .image-container img {
     width: 54%;
     height: auto;
-    margin-top: 75px;
-    /* display: block; */
-}
-
+    margin-top: 75px;}
 .text-contenu {
     margin-top: 60px;
     padding: 25px;
-    max-width: 450px;
-}
-
+    max-width: 450px;}
 .text-contenu h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
     color: var(--Blue-Zodiac);
     margin-bottom: 40px;
-    text-align: left;
-}
-
+    text-align: left;}
 .text-contenu p {
     font-size: 1em;
     line-height: 1.6;
     color: var(--muted);
-    text-align: left;
-}
-
+    text-align: left;}
 /******************************************Temoignages************************************/
-
-/* Styles pour la section témoignages */
 #temoignages {
     padding: 60px 20px;
     margin: auto;
     text-align: center;
-    background-color: var(--whiteBG);
-}
-
+    background-color: var(--whiteBG);}
 #temoignages h2 {
     font-size: 2.5em;
     margin-bottom: 5px;
-    color: var(--Blue-Zodiac);
-}
+    color: var(--Blue-Zodiac);}
 .testimonial-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
-    /* flex-wrap: wrap; */
-}
+    gap: 80px;}
 
-.testimonial {
+.testimonial{
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -250,86 +193,95 @@ header{
     height: 400px;
     text-align: left;
 }
-
 .testimonial img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
-}
-
+    padding: 10px;
+    margin-left: 30px;
+    
+    margin-bottom: 20px;}
 .testimonial h3 {
     font-size: 1.1em;
     margin-top: 10px;
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
 .testimonial p {
     font-size: 1em;
     color: var(--muted);
-    margin: 5px 25px 25px 25px;
-}
+    margin: 5px 25px 25px 25px;}
 .profile{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 20px; */
     font-size: 12px;
     margin: 5px 15px 25px 15px;
-    width: 100%;
-}
+    width: 100%;}
 .profile .etoile{
     position: relative;
     top: 7px;
     width: 125px;
-    left: 35px;
-
-}
-
+    left: 35px;}
 /*********************************************Contacter ******************************************************/
-
 #contact .container-cntct {
-    /* max-width: 1050px; */
     margin: 0 auto;
     padding: 20px;
- 
 }
 #contact .container-cntct h1 {
     text-align: center;
     color: var(--Blue-Zodiac);
-    margin-bottom: 5px;
-
-
-}
+    margin-bottom: 5px;}
 .contact-form {
      max-width: 1050px;
      margin: 0 auto;
      padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-}
+    align-items: flex-start;}
 form {
     flex: 1;
     margin-right: 20px;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px;}
 label {
     display: block;
     margin-bottom: 5px;
-    color: var(--dark);
-}
-
+    color: var(--dark);}
 input, textarea { 
     width: 80%;
     padding: 10px;
     margin-bottom: 20px; 
     border: 1px solid var(--cl-input);
-    border-radius: 8px;
-}
+    border-radius: 8px;}
 textarea {
     height: 100px;
+    
     resize: none;
+
 }
+    .politique {
+        margin: 15px 0;
+    }
+    /*Politique*/
+    .politique{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .politique input[type="checkbox"] {
+        margin-right: 5px;
+        width: 8%;
+    }
+    .politique label{
+        font-size: 14px;
+    }
+    .politique a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .politique a:hover {
+        text-decoration: underline;
+    }
+    
 button {
     display: block;
     width: 80%;
@@ -338,81 +290,61 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
-    cursor: pointer;
-}
+    margin-top: 20px;
+    cursor: pointer;}
 button:hover {
-    background-color: var(--Como-Green);
-}
+    background-color: var(--Como-Green);}
 .contact-info {
-    flex: 1;
-}
+    flex: 1;}
 .contact-info p {
     font-weight: 550;
     margin-bottom: 8px;
-    margin-top: 15px; 
-}
+    margin-top: 15px; }
 .contact-info span{
-    font-weight: 500;
-}
+    font-weight: 500;}
 .contact-info a {
     color: var(--primary);
-    text-decoration: none;
-}
+    text-decoration: none;}
 .contact-info a:hover {
     text-decoration: underline;
-    color: var(--Asparagus);
-}
-
+    color: var(--Asparagus);}
 iframe {
     width: 100%;
-    height: 270px;
-   
-}
+    height: 340px;  }
 footer {
-
     padding: 0px 20px 0px 20px;
     background-color: var(--Viridian);
     color: var(--white);
     margin-top: 40px;
-    height: 50px;
-}
+    height: 50px;}
 footer p {
     margin-left: 40px;
-    /* padding: 10px; */
     font-size: 12px;
    position: relative;
    top: 20px;
 }
 .social-media {
-    
     text-align: right;
     display: flex;
     justify-content: end;
     align-items: center;   
 }
 .social-media a {
-    margin: 0 10px;
-}
+    margin: 0 10px;}
 .social-media img {
     width: 28px;
     height: 28px;
     position: relative;
     top: 0px;
     margin-right: 40px;
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
-   
-} 
-
-
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%); } 
 hr{
     border: 0;
     height: 1px;
     background: var(--Blue-Zodiac);
     margin: 10px 0 0;
     width: 100%;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;}
 /****************************Menu bar***************************************/
 .navbar .menu-toggle{
     display: none;
@@ -473,6 +405,7 @@ hr{
 
 
     }
+    
     .text-contenu {
         margin-top: 60px;
         padding: 25px;
@@ -517,7 +450,6 @@ hr{
     top: 5%;
     width: 35px;
     height: 30px;
-  
 }   
     .navbar{
         padding: 0px;
@@ -528,17 +460,16 @@ hr{
     .nav-links{
         position: absolute;  
         top: 35px;
-       left: 60%;
         background-color: var(--Viridian);
         backdrop-filter: blur(10px);
-        width: 50%;
+        width: 100%;
         height: 50vh;
-        margin-left: -110%;
+        margin-left: -180%;
         transition: all 0.5s ease;
+        z-index: 1;
     }
     .nav-links.mobile-menu {
         margin-left: 0%;
-    
     }
 
     .nav-links ul{
@@ -547,10 +478,11 @@ hr{
         align-items: center;
     }
     .navbar .nav-links li{
-        margin: 15px 5px 0px 0px;
+       margin-top: 30px;
         position: relative;
-        left: 30px;
-        font-size: 20px;
+        left: 50px;
+        font-size: 14px;
+       letter-spacing: 2px;
     }
 .img-logo{
     width: 8%;
@@ -564,16 +496,14 @@ hr{
         margin-bottom: 20px;
         width: 65%;
         color: var(--white);
-        margin-left: 15px ;
-        
+        margin-left: 15px ; 
     }
     #acceuil .header-content p {
         font-size: 0.9em;
         margin-left: 15px;
         color: var(--whiteBG);
         margin-bottom: 6%;
-        margin-top: 3%;
-        
+        margin-top: 3%;   
     }
     #acceuil .header-content .btn-primary {
         background-color: var(--Viridian);
@@ -584,14 +514,12 @@ hr{
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
-    /************* Services *****************************/
-            
+    /************* Services *****************************/   
     #services {
         padding: 60px 0;
         text-align: center;
         margin: auto;
         background-color: var(--whiteBG);
-        
     }
     .contenu-service {
         display: flex;
@@ -601,15 +529,12 @@ hr{
         gap: 45px;
         margin-top: 5%;
     }
-
     /*********************Propos***********************************/
-
     #propos {
         text-align: center;
         padding: 50px 20px;
         margin: auto;
     }
-
     .propos-contenu {
         display: flex;
         /* flex-wrap: wrap; */
@@ -625,14 +550,12 @@ hr{
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         overflow: hidden;
         margin-right:0% ;
-        width: 80%;
-        
+        width: 80%; 
     }
     .image-container img {
         width: 80%;
         height: auto;
         margin-top: 80px;
-        /* display: block; */
     }
     .text-contenu {
         margin-top: 60px;
@@ -663,8 +586,7 @@ hr{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 80px;
-        /* flex-wrap: wrap; */    
+        gap: 80px;    
     }
     /*******************Contact ******************************/
     .contact-form {
@@ -676,7 +598,6 @@ hr{
         align-items: center;
         flex-direction: column-reverse;
         gap: 100px;
-        
     }  
     form {
         flex: 1;
@@ -710,7 +631,7 @@ hr{
         color: white;
         border: none;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 50px;
         cursor: pointer;
     }    
     footer {
@@ -734,7 +655,6 @@ hr{
         display: flex;
         justify-content: end;
         align-items: center;
-        
     }
     .social-media img {
         width: 28px;
@@ -743,6 +663,5 @@ hr{
         top: 0px;
         margin-right: 10px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
-    
     } 
 }

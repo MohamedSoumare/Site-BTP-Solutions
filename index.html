@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site BTP - Construisons ensemble des infrastructures durables</title>
-    <meta name="description" content="BTP Solutions offre des services de construction, de travaux publics et de rénovation pour des infrastructures durables et innovantes.">
-    <meta name="keywords" content="BTP, construction, travaux publics, rénovation, infrastructures durables">
+    <title>Site BTP Construisons ensemble des infrastructures durables et innovantes</title>
+    <meta name="description" content="BTP Solutions offre des services de construction de bâtiments résidentiels à la gestion de grands projets d'infrastructure, de travaux publics et de rénovation pour des infrastructures durables et innovantes.">
+    <meta name="keywords" content="BTP, Services BTP,Services,construction, travaux publics, rénovation, infrastructures durables,infrastructures innovantes, infrastructures innovantes et durables, infrastructures durables et innovantes">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/btp_solutions_logo.webp" />
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <img class="img-logo" src="assets/images/BTP_mini-Solutions_Logo.webp" alt="Logo BTP Solutions">
+            <img class="img-logo" src="assets/images/btp_solutions_logo.webp" alt="Logo BTP Solutions">
             <div class="nav-links">
                 <ul>
                     <li><a href="#acceuil">Accueil</a></li>
@@ -56,13 +57,13 @@
                 </div>
             </div>
         </section>
-        <!-- À propos -->
+        <!-- À propos de nous -->
         <section id="propos">
-            <h1>À Propos</h1>
+            <h1>À propos de nous</h1>
             <hr>
             <div class="propos-contenu">
                 <div class="image-container">
-                    <img src="assets/images/Heros1_avec_equipe.webp" alt="Image de l'équipe BTP Solutions">
+                    <img src="assets/images/heros1_avec_equipe.webp" alt="l'équipe BTP Solutions">
                 </div>
                 <div class="text-contenu">
                     <h2>À propos de BTP Solutions</h2>
@@ -78,7 +79,7 @@
             <hr>
             <div class="testimonial-container">
                 <div class="testimonial">
-                    <img src="assets/images/client-2.webp" alt="Ahmed Salem">
+                    <img src="assets/images/client2.jpeg" alt="Ahmed Salem">
                     <div class="profile">
                         <h3>Ahmed Salem</h3>
                         <p class="etoile">⭐⭐⭐⭐⭐</p>
@@ -86,7 +87,7 @@
                     <p>Grâce à BTP Solutions, notre maison a été construite avec un véritable savoir-faire. Leur professionnalisme est visible dès le début de notre collaboration.</p>
                 </div>
                 <div class="testimonial">
-                    <img src="assets/images/client-1.webp" alt="Pierre Rodrik">
+                    <img src="assets/images/client2.jpeg" alt="Pierre Rodrik">
                     <div class="profile">
                         <h3>Pierre Rodrik</h3>
                         <p class="etoile">⭐⭐⭐⭐⭐</p>
@@ -94,7 +95,7 @@
                     <p>Les travaux de rénovation de notre bâtiment ont été réalisés avec une grande attention aux détails. Merci à toute l'équipe de BTP Solutions.</p>
                 </div>
                 <div class="testimonial">
-                    <img src="assets/images/client-3.webp" alt="Oul Boubacar">
+                    <img src="assets/images/client2.jpeg" alt="Oul Boubacar">
                     <div class="profile">
                         <h3>Oul Boubacar</h3>
                         <p class="etoile">⭐⭐⭐⭐⭐</p>
@@ -109,13 +110,18 @@
                 <div class="contact-form">
                     <form action="#" onsubmit="return validateForm()">
                         <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="Entre votre nom" required>
                         <span id="name-error-message"></span>
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Entre votre email" required>
                         <span id="email-validation-message"></span>
                         <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Tapez un message..." required></textarea>
+                        <div class="politique">
+                            <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                            <label for="consent">J'accepte la collecte et l'utilisation de mes données personnelles conformément à la <a href="politique-confidentialite.html">politique de confidentialité</a></label>
+                        </div>
+                        
                         <button type="submit">Envoyer</button>
                     </form>
                         <div class="contact-info">
@@ -126,13 +132,54 @@
                 </div>
             </div>
         </section>
-        <footer>
+    </main>
+    <footer>
             <p>© 2005-2024, All Rights Reserved</p>
             <div class="social-media">
                 <a href="#"><img src="assets/images/linkedin-logo-24.webp" alt="LinkedIn"></a>
                 <a href="#"><img src="assets/images/twitter-logo-24.webp" alt="Twitter"></a>
             </div>
-        </footer>          
+    </footer>     
+    <script>
+        // Validation du formulaire
+        function validateForm() {
+            const nameInput = document.getElementById("name");
+            const nameRegex = /^[a-zA-Z]+$/;
+            const nameErrorMessage = document.getElementById("name-error-message");
+            const emailInput = document.getElementById("email");
+            const emailRegex = /^[^\s@]+@[^\s@]+\.btp$/;
+            const emailValidationMessage = document.getElementById("email-validation-message");
+            const consentCheckbox = document.getElementById("consent");
+            
+            emailValidationMessage.textContent = "";
+            nameErrorMessage.textContent = "";
+            
+            if (!nameRegex.test(nameInput.value)) {
+                nameErrorMessage.textContent = "Le nom doit contenir uniquement des lettres.";
+                return false;
+            }
+            if (!emailRegex.test(emailInput.value)) {
+                emailValidationMessage.textContent = "L'adresse email doit se terminer par .btp";
+                return false;
+            }
+            if (!consentCheckbox.checked) {
+                alert("Veuillez accepter la collecte et l'utilisation de vos données personnelles.");
+                return false;
+            }
+            return true;
+        }
+        // Gestion du menu mobile
+        let toggleMenu = document.querySelector('.menu-toggle');
+        let navLinks = document.querySelector('.nav-links');
+    
+        toggleMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+        // Gestion du consentement aux cookies
+        document.getElementById("accept-cookies").addEventListener('click', () => {
+            document.getElementById("cookie-consent-banner").style.display = "none";
+        });
+    </script>
+    
 </body>
-<script src="assets/js/scripts.js" async></script>
 </html>

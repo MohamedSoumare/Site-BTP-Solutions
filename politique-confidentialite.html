@@ -50,10 +50,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   
     }
-.navbar .nav-links ul li{
-    
+.navbar .nav-links ul li{ 
     margin-right: 80px;
     margin-top: 10px;
 }
@@ -61,12 +59,10 @@
     color: white;
     font-size: 12px;
     }
-
 .img-logo{
     width: 4%;
     height: 4%;
     margin-left: 70px;}
-
     .navbar .menu-toggle{
     display: none;
     position: absolute;
@@ -76,7 +72,6 @@
     height: 30px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
-
 .contenu-politique { 
     max-width: 800px;
     margin: 80px auto;
@@ -85,7 +80,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
 .header-politique{
     text-align: center;
     border-bottom: 2px solid var(--Blue-Zodiac);
@@ -116,7 +110,6 @@ ul li {
     margin-bottom: 2px;
     margin-left: 20px;
     margin-top: 20px;
-
 }
 a {
     color: var(--Blue-Zodiac);
@@ -126,12 +119,8 @@ a:hover {
     text-decoration: underline;
     color: var(--Como-Green);
 }
-
 @media only screen and (min-width: 400px) and (max-width: 764px) {
-
-
-/****************************Menu bar***************************************/
-.navbar .menu-toggle{
+    .navbar .menu-toggle{
     display: none;
     position: relative;
     right: 70px;
@@ -176,8 +165,7 @@ a:hover {
     height: 8%;
     margin-left: 80px;
 }
-    .contenu-politique {
-        
+    .contenu-politique {       
         font-size: 14px;
         padding: 50px;
         margin: auto;
@@ -187,7 +175,6 @@ section p{
     padding: 20px
 }
 }
-
 </style>
 <body>
 
@@ -254,15 +241,10 @@ section p{
 </main>
 <footer></footer>
 <script>
-    
-// Gestion du menu mobile
 let toggleMenu = document.querySelector('.menu-toggle');
 let navLinks = document.querySelector('.nav-links');
-
 toggleMenu.addEventListener('click', () => {
   navLinks.classList.toggle('mobile-menu');
 });
-
 </script>
-</body>
-</html>
+</body></html>

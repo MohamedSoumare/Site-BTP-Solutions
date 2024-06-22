@@ -49,18 +49,20 @@ header{
     top: 1px;}
 .navbar .nav-links ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 40px;}
+    }
 .navbar .nav-links ul li{
-    margin-right: 80px;}
+    margin-right: 70px;}
 .navbar a{
-    color: white;}
+    color: white;
+    font-size: 12px;
+    }
 
 .img-logo{
     width: 4%;
     height: 4%;
-    margin-left: 80px;}
+    margin-left: 70px;}
 /*************************************************Acceuil Header**************************************************/
 #acceuil .header-content {
     position: absolute;
@@ -99,7 +101,9 @@ header{
 .service-container h2 {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 5px;}
+    margin-bottom: 5px;
+    color: var(--Blue-Zodiac);
+}
 .contenu-service {
     display: flex;
     justify-content: center;
@@ -127,36 +131,32 @@ header{
     color: var(--muted);
     text-align: left;
 }
-.service-container span{
-    color: var(--Blue-Zodiac);}
 /*******************************************A propos *********************************/
 #propos {
-    text-align: center;
-    padding: 50px 20px;
-    margin: auto;}
+    text-align: center;}
 #propos h1 {
     font-size: 2.5em;
     margin-bottom: 5px;
     color: var(--Blue-Zodiac);}
 .propos-contenu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;}
+    gap: 100px;
+    margin-top: 80px;
+}
 .text-contenu {
     background: var(--whiteBG);
     border-radius: 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     overflow: hidden;
-    margin-right:8% ;}
+    padding: 48px;
+    margin-right: 8%; 
+    }
 .image-container img {
-    width: 54%;
-    height: auto;
-    margin-top: 75px;}
-.text-contenu {
-    margin-top: 60px;
-    padding: 25px;
-    max-width: 450px;}
+    width: 85%;
+    margin-left: 20%;
+}
 .text-contenu h2 {
     font-size: 1.5em;
     margin-bottom: 15px;
@@ -183,7 +183,6 @@ header{
     justify-content: center;
     align-items: center;
     gap: 80px;}
-
 .testimonial{
     background-color: var(--white);
     border-radius: 10px;
@@ -194,13 +193,12 @@ header{
     text-align: left;
 }
 .testimonial img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
-    padding: 10px;
-    margin-left: 30px;
-    
-    margin-bottom: 20px;}
+    padding: 10px;   
+    margin-bottom: 10px;}
+
 .testimonial h3 {
     font-size: 1.1em;
     margin-top: 10px;
@@ -260,7 +258,6 @@ textarea {
     .politique {
         margin: 15px 0;
     }
-    /*Politique*/
     .politique{
         display: flex;
         justify-content: space-evenly;
@@ -277,11 +274,9 @@ textarea {
         color: #007bff;
         text-decoration: none;
     }
-    
     .politique a:hover {
         text-decoration: underline;
     }
-    
 button {
     display: block;
     width: 80%;
@@ -311,6 +306,7 @@ button:hover {
 iframe {
     width: 100%;
     height: 340px;  }
+/*********************************************************Footer**************************************/
 footer {
     padding: 0px 20px 0px 20px;
     background-color: var(--Viridian);
@@ -381,31 +377,25 @@ hr{
         padding: 50px 20px;
         margin: auto;
     }
-
     .propos-contenu {
         display: flex;
         /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
     .text-contenu {
         background: var(--whiteBG);
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         overflow: hidden;
-        margin-right:0% ;   
+        margin-right:0% ;
     }
     .image-container img {
         width: 70%;
         height: auto;
-        margin-top: 80px;
-        /* display: block; */
-
-
-    }
-    
+        margin-top: 80px;}
     .text-contenu {
         margin-top: 60px;
         padding: 25px;
@@ -434,10 +424,7 @@ hr{
         align-items: center;
         flex-direction: column;
         gap: 80px;
-        /* flex-wrap: wrap; */
-        
     }
-
 }
 /*****************************************************************************/
 @media only screen and (min-width: 400px) and (max-width: 764px) {
@@ -463,7 +450,7 @@ hr{
         background-color: var(--Viridian);
         backdrop-filter: blur(10px);
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         margin-left: -180%;
         transition: all 0.5s ease;
         z-index: 1;
@@ -471,14 +458,13 @@ hr{
     .nav-links.mobile-menu {
         margin-left: 0%;
     }
-
     .nav-links ul{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .navbar .nav-links li{
-       margin-top: 30px;
+       margin-top: 40px;
         position: relative;
         left: 50px;
         font-size: 14px;
@@ -489,7 +475,6 @@ hr{
     height: 8%;
     margin-left: 80px;
 }
-    
 /*****************Acceuil Header*************************/
     #acceuil .header-content h1 {
         font-size: 2.2em;
@@ -532,18 +517,15 @@ hr{
     /*********************Propos***********************************/
     #propos {
         text-align: center;
-        padding: 50px 20px;
         margin: auto;
     }
     .propos-contenu {
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
         gap: 20px;
     }
-
     .text-contenu {
         background: var(--whiteBG);
         border-radius: 10px;
@@ -606,8 +588,8 @@ hr{
     }
     label {
         display: block;
-        margin-bottom: 5px;
         color: var(--dark);
+        margin-bottom: 5px;
     }
     input, textarea {
         
@@ -622,6 +604,14 @@ hr{
     textarea {
         height: 100px;
         resize: none;
+    }
+
+    .politique input[type="checkbox"] {
+        margin-right: 5px;
+        width: 8%;
+    }
+    .politique label{
+        font-size: 13px;
     }
     button {
         display: block;
@@ -644,13 +634,11 @@ hr{
     }
     footer p {
         margin-left: 20px;
-        /* padding: 10px; */
         font-size: 12px;
-    position: relative;
-    top: 20px;
+        position: relative;
+        top: 20px;
     }
     .social-media {
-        
         text-align: right;
         display: flex;
         justify-content: end;

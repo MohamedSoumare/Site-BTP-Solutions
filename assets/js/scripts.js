@@ -25,6 +25,7 @@ function validateForm() {
   }
   return true;
 }
+
 // Gestion du menu mobile
 let toggleMenu = document.querySelector('.menu-toggle');
 let navLinks = document.querySelector('.nav-links');

@@ -253,6 +253,16 @@ section p{
     </div>
 </main>
 <footer></footer>
-<script src="assets/js/scripts.js"></script>
+<script>
+    
+// Gestion du menu mobile
+let toggleMenu = document.querySelector('.menu-toggle');
+let navLinks = document.querySelector('.nav-links');
+
+toggleMenu.addEventListener('click', () => {
+  navLinks.classList.toggle('mobile-menu');
+});
+
+</script>
 </body>
 </html>

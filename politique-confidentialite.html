@@ -1,73 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politique de Confidentialité - BTS Solutions</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <meta name="description" content="BTP Solutions offre un politique de confidentialité pour ces personnelles et clients, afin de garantir une protection des données durables">
+    <meta name="keywords" content="BTP, Services BTP,Politique et Confidentialité, Politique, Confidentialité, Confidentiel ,Confident, politique confidentiel">
 </head>
 <style>
+    :root{
+    --primary: #516eff;
+    --lightprimary: #0056b3;
+    --white: #ffffff;
+    --Blue-Zodiac: #0c2c43;
+    --c-titre :#38586C;
+
+    --defaultLinkColor: #333;
+    --yellow: #fddf3b;
+    --muted: #777777;
+    --whiteBG: #f8fafc;
+    --Tea-Green: #d9e5c4;
+    --Como-Green: #54816d;}
+
     body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: var(--whiteBG);
     margin: 0;
     padding: 0;
-    color: #333;
+    color: var(--defaultLinkColor);
 }
-
-.container {
+.contenu-politique { 
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
-
-header {
+.header-politique{
     text-align: center;
-    border-bottom: 2px solid #0c2c43;
+    border-bottom: 2px solid var(--Blue-Zodiac);
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-
 header h1 {
     margin: 0;
-    color: #0c2c43;
+    color: var(--Blue-Zodiac);
 }
-
 section {
     margin-bottom: 20px;
 }
-
 section h2 {
-    color: #54816d;
+    color:var(--Como-Green);
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
-
 ul {
     padding-left: 20px;
 }
-
 ul li {
     margin-bottom: 10px;
+    margin-left: 100px;
 }
-
 a {
-    color: #0c2c43;
+    color: var(--Blue-Zodiac);
     text-decoration: none;
 }
-
 a:hover {
     text-decoration: underline;
+    color: var(--Como-Green);
 }
-
 </style>
 <body>
-    <div class="container">
-        <header>
+    <div class="contenu-politique">
+        <header class="header-politique">
             <h1>Politique de Confidentialité</h1>
         </header>
         <section>
@@ -99,10 +105,6 @@ a:hover {
             <p>Nous ne partageons pas vos informations personnelles avec des tiers, sauf si nécessaire pour répondre à vos demandes ou pour se conformer à la loi.</p>
         </section>
         <section>
-            <h2>Cookies</h2>
-            <p>Nous utilisons des cookies pour améliorer l'expérience utilisateur sur notre site.</p>
-        </section>
-        <section>
             <h2>Vos Droits</h2>
             <p>Conformément aux lois RGPD, vous avez le droit d'accéder, de corriger, de supprimer, de vous opposer au traitement, et de demander la portabilité de vos informations personnelles.</p>
         </section>
@@ -116,5 +118,4 @@ a:hover {
         </section>
     </div>
 </body>
-
 </html>

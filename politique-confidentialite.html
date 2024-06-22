@@ -6,6 +6,7 @@
     <title>Politique de Confidentialité - BTS Solutions</title>
     <meta name="description" content="BTP Solutions offre un politique de confidentialité pour ces personnelles et clients, afin de garantir une protection des données durables">
     <meta name="keywords" content="BTP, Services BTP,Politique et Confidentialité, Politique, Confidentialité, Confidentiel ,Confident, politique confidentiel">
+    <link rel="shortcut icon" href="assets/images/btp_solutions_logo.webp">
 </head>
 <style>
     :root{
@@ -14,13 +15,21 @@
     --white: #ffffff;
     --Blue-Zodiac: #0c2c43;
     --c-titre :#38586C;
-
+    --Viridian: #3d6b63;
+    --Gossamer: #284f54;
     --defaultLinkColor: #333;
     --yellow: #fddf3b;
     --muted: #777777;
     --whiteBG: #f8fafc;
     --Tea-Green: #d9e5c4;
     --Como-Green: #54816d;}
+    *{
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;}
 
     body {
     font-family: Arial, sans-serif;
@@ -29,38 +38,85 @@
     padding: 0;
     color: var(--defaultLinkColor);
 }
+.navbar{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: var(--Viridian);
+    top: 1px;}
+.navbar .nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   
+    }
+.navbar .nav-links ul li{
+    
+    margin-right: 80px;
+    margin-top: 10px;
+}
+.navbar a{
+    color: white;
+    font-size: 12px;
+    }
+
+.img-logo{
+    width: 4%;
+    height: 4%;
+    margin-left: 70px;}
+
+    .navbar .menu-toggle{
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 5px;
+    width: 35px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
 .contenu-politique { 
     max-width: 800px;
-    margin: 50px auto;
+    margin: 80px auto;
     padding: 20px;
     background-color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
 .header-politique{
     text-align: center;
     border-bottom: 2px solid var(--Blue-Zodiac);
     padding-bottom: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
-header h1 {
-    margin: 0;
+.header-politique h1 {
+    margin:auto;
     color: var(--Blue-Zodiac);
 }
 section {
     margin-bottom: 20px;
+    
 }
 section h2 {
     color:var(--Como-Green);
     border-bottom: 1px solid #ddd;
     padding-bottom: 5px;
 }
+section p{
+    margin-top: 20px;
+    padding: 20px
+}
 ul {
     padding-left: 20px;
 }
 ul li {
-    margin-bottom: 10px;
-    margin-left: 100px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-top: 20px;
+
 }
 a {
     color: var(--Blue-Zodiac);
@@ -70,8 +126,86 @@ a:hover {
     text-decoration: underline;
     color: var(--Como-Green);
 }
+
+@media only screen and (min-width: 400px) and (max-width: 764px) {
+
+
+/****************************Menu bar***************************************/
+.navbar .menu-toggle{
+    display: none;
+    position: relative;
+    right: 70px;
+    top: 5%;
+    width: 35px;
+    height: 30px;
+}   
+    .navbar{
+        padding: 0px;
+    }
+    .navbar .menu-toggle{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;  
+        top: 35px;
+        background-color: var(--Viridian);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        height: 40vh;
+        margin-left: -180%;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+    .nav-links.mobile-menu {
+        margin-left: 0%;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links li{
+       margin-top: 40px;
+        position: relative;
+        left: 50px;
+        font-size: 14px;
+       letter-spacing: 2px;
+    }
+.img-logo{
+    width: 8%;
+    height: 8%;
+    margin-left: 80px;
+}
+    .contenu-politique {
+        
+        font-size: 14px;
+        padding: 50px;
+        margin: auto;
+    }
+section p{
+    margin-top: 20px;
+    padding: 20px
+}
+}
+
 </style>
 <body>
+
+    <header>
+        <nav class="navbar">
+            <img class="img-logo" src="assets/images/btp_solutions_logo.webp" alt="Logo BTP Solutions">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#propos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <img src="assets/images/menu_bar.webp" alt="Menu" class="menu-toggle">
+        </nav>
+    </header>
+  <main>
     <div class="contenu-politique">
         <header class="header-politique">
             <h1>Politique de Confidentialité</h1>
@@ -117,5 +251,20 @@ a:hover {
             <p>Pour toute question, veuillez nous contacter à : <a href="mailto:contact@btpsolutions.com">contact@btpsolutions.com</a></p>
         </section>
     </div>
+</main>
+<footer></footer>
+<script>
+      // Gestion du menu mobile
+      let toggleMenu = document.querySelector('.menu-toggle');
+        let navLinks = document.querySelector('.nav-links');
+    
+        toggleMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu');
+        });
+        // Gestion du consentement aux cookies
+        document.getElementById("accept-cookies").addEventListener('click', () => {
+            document.getElementById("cookie-consent-banner").style.display = "none";
+        });
+</script>
 </body>
 </html>

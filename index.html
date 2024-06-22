@@ -7,7 +7,7 @@
     <meta name="description" content="BTP Solutions offre des services de construction de bâtiments résidentiels à la gestion de grands projets d'infrastructure, de travaux publics et de rénovation pour des infrastructures durables et innovantes.">
     <meta name="keywords" content="BTP, Services BTP,Services,construction, travaux publics, rénovation, infrastructures durables,infrastructures innovantes, infrastructures innovantes et durables, infrastructures durables et innovantes">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="shortcut icon" href="assets/images/btp_solutions_logo.webp" />
+    <link rel="shortcut icon" href="assets/images/btp_solutions_logo.webp">
 </head>
 <body>
     <header>
@@ -119,7 +119,7 @@
                         <textarea id="message" name="message" placeholder="Tapez un message..." required></textarea>
                         <div class="politique">
                             <input type="checkbox" id="consent" name="consent" required aria-required="true">
-                            <label for="consent">J'accepte la collecte et l'utilisation de mes données personnelles conformément à la <a href="politique-confidentialite.html">politique de confidentialité</a></label>
+                            <label for="consent">J'accepte la collecte et l'utilisation de mes données personnelles conformément pour savoir plus à la <a href="politique-confidentialite.html">politique de confidentialité</a></label>
                         </div>
                         
                         <button type="submit">Envoyer</button>
@@ -141,10 +141,10 @@
             </div>
     </footer>     
     <script>
-        // Validation du formulaire
         function validateForm() {
+        
             const nameInput = document.getElementById("name");
-            const nameRegex = /^[a-zA-Z]+$/;
+            const nameRegex = /^[a-zA-Z\s]+$/;
             const nameErrorMessage = document.getElementById("name-error-message");
             const emailInput = document.getElementById("email");
             const emailRegex = /^[^\s@]+@[^\s@]+\.btp$/;
@@ -155,11 +155,11 @@
             nameErrorMessage.textContent = "";
             
             if (!nameRegex.test(nameInput.value)) {
-                nameErrorMessage.textContent = "Le nom doit contenir uniquement des lettres.";
+                nameErrorMessage.textContent = alert("Le nom doit contenir uniquement des lettres et des espaces.");
                 return false;
             }
             if (!emailRegex.test(emailInput.value)) {
-                emailValidationMessage.textContent = "L'adresse email doit se terminer par .btp";
+                emailValidationMessage.textContent = alert("L'adresse email doit se terminer par .btp");
                 return false;
             }
             if (!consentCheckbox.checked) {
@@ -168,6 +168,7 @@
             }
             return true;
         }
+
         // Gestion du menu mobile
         let toggleMenu = document.querySelector('.menu-toggle');
         let navLinks = document.querySelector('.nav-links');

@@ -51,6 +51,7 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
     }
 .navbar .nav-links ul li{
     margin-right: 80px;
@@ -478,7 +479,7 @@ hr{
 }
 /*****************Acceuil Header*************************/
     #acceuil .header-content h1 {
-        font-size: 2.2em;
+        font-size: 1.5em;
         margin-bottom: 20px;
         width: 65%;
         color: var(--white);
@@ -488,7 +489,7 @@ hr{
         font-size: 0.9em;
         margin-left: 15px;
         color: var(--whiteBG);
-        margin-bottom: 6%;
+        margin-bottom: 12%;
         margin-top: 3%;   
     }
     #acceuil .header-content .btn-primary {
@@ -539,6 +540,27 @@ hr{
         width: 80%;
         height: auto;
         margin-top: 80px;
+        position: relative;
+        right: 48px;
+    }
+    /******************Temoignages**********************************/
+    .text-contenu {
+        margin-top: 60px;
+        padding: 25px;
+        max-width: 500px;
+    }
+    .text-contenu h2 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+        color: var(--Blue-Zodiac);
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    .text-contenu p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: var(--muted);
+        text-align: left;
     }
     .text-contenu {
         margin-top: 60px;

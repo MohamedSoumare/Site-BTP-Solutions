@@ -445,7 +445,7 @@ hr{
     }
     .nav-links{
         position: absolute;  
-        top: 35px;
+        top: 39px;
         background-color: var(--Viridian);
         backdrop-filter: blur(10px);
         width: 100%;
@@ -463,29 +463,30 @@ hr{
         align-items: center;
     }
     .navbar .nav-links li{
-       margin-top: 20%;
+       margin-top: 12%;
         position: relative;
         left: 50px;
         font-size: 20px;
         font-weight: 500;
        letter-spacing: 2px;
     }
-.img-logo{
-    width: 8%;
-    height: 8%;
-    margin-left: 80px;
-}
+    .img-logo{
+        width: 8%;
+        height: 8%;
+        margin-left: 80px;
+    }
+
 /*****************Acceuil Header*************************/
     #acceuil .header-content h1 {
         font-size: 1.5em;
         margin-bottom: 20px;
         width: 65%;
         color: var(--white);
-        margin-left: 15px ; 
+        margin-left: 12% ; 
     }
     #acceuil .header-content p {
         font-size: 0.9em;
-        margin-left: 15px;
+        margin-left: 12%;
         color: var(--whiteBG);
         margin-bottom: 12%;
         margin-top: 3%;   
@@ -495,7 +496,7 @@ hr{
         color: var(--white);
         padding: 10px 30px;
         border-radius: 5px;
-        margin-left: 15px;
+        margin-left: 12%;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }

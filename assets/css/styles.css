@@ -68,14 +68,14 @@ header{
 /*************************************************Acceuil Header**************************************************/
 #acceuil .header-content {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 5%;
     margin: auto;}
 
 #acceuil .header-content h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    width: 75%;
+    width: 80%;
     color: var(--white);
     margin-left: 60px ;}
 #acceuil .header-content p{
@@ -83,7 +83,7 @@ header{
     margin-left: 60px;
     color: var(--whiteBG);
     margin-bottom: 6%;
-    margin-top: 3%;  }
+    margin-top: 2%;  }
 #acceuil .header-content .btn-primary {
     background-color: var(--Viridian);
     color: var(--white);
@@ -458,7 +458,7 @@ hr{
     }
     .nav-links{
         position: absolute;  
-        top: 39px;
+        top: 36px;
         background-color: var(--Viridian);
         backdrop-filter: blur(10px);
         width: 100%;

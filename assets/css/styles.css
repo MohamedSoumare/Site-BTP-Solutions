@@ -354,55 +354,48 @@ hr{
 /*************************Media query******************************************/
 
 @media only screen and (min-width: 765px) and (max-width: 1150px) {
-
     /************* Services *****************************/   
     #services {
         padding: 60px 0;
         text-align: center;
         margin: auto;
         background-color: var(--whiteBG);
-        
     }
     .contenu-service {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px;
         margin-top: 5%;
+        justify-items: center; 
+        align-items: center;
     }
     /*********************Propos***********************************/
     #propos {
         text-align: center;
-        padding: 50px 20px;
-        margin: auto;
     }
     .propos-contenu {
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        gap: 10px;
+        gap: 50px;
     }
     .text-contenu {
         background: var(--whiteBG);
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         overflow: hidden;
-        margin-right:0% ;   
+        margin: auto;
+        width: 70%;
     }
+
     .image-container img {
         width: 70%;
-        height: auto;
-        margin-top: 80px;}
-    .text-contenu {
-        margin-top: 60px;
-        padding: 25px;
-        max-width: 500px;
+        margin: auto; 
     }
+    
     .text-contenu h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-bottom: 15px;
         color: var(--Blue-Zodiac);
         margin-bottom: 40px;
@@ -425,6 +418,26 @@ hr{
         flex-direction: column;
         gap: 80px;
     }
+    .politique label{
+        font-size: 12px;
+        max-width: 400px;
+    }
+    footer p {
+        margin-left: 20px;
+        font-size: 12px;
+        position: relative;
+        top: 20px;
+    }
+
+    .social-media img {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        top: 0px;
+        margin-right: 20px;
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    } 
+ 
 }
 
 @media only screen and (min-width: 400px) and (max-width: 764px) {
